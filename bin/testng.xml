@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="TestNG Session Test Automation Suite" parallel="classes">
+
+	<test name="Different testng Feature Test">
+	
+		<classes>
+			  
+			<class name="com.test.ExceptionTimeOutTest"></class>
+			<class name="com.test.GoogleTest"></class>
+			<class name="com.test.GoogleTitleTest"></class>
+			<class name="com.test.InvocationCountTest"></class>
+			<class name="com.test.TestNGBasics"></class>
+			<class name="com.test.TestNgFeatures"></class>
+			
+		</classes>
+		
+	</test>
+	
+</suite>
+ 
+ 
+<suite name="Yahoo App Test Automation Suite">
+	<test name="Yahoo App Test">
+	
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="url" value="https://login.yahoo.com"></parameter>
+		<parameter name="emailId" value="test@yahoo.com"></parameter>
+	
+		<classes>
+			<class name="com.parameters.ParameterTest"></class>
+		</classes>
+	
+	</test>
+</suite>
